@@ -1,2 +1,2 @@
 #!/bin/bash
-chgrp X ugo+x ./ 
+chmod ugo+X ./ 

@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -v ls_cwdc_content ls -la
+cp -v ls_cwd_content ls -la

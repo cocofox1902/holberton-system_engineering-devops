@@ -1,2 +1,2 @@
 #!/bin/bash
-pr /etc/passwd /etc/hosts
+past /etc/passwd /etc/hosts

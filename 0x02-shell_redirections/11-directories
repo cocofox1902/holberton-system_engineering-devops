@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -l | grep -c ^d
+find . -mindepth -l | wc -1
+

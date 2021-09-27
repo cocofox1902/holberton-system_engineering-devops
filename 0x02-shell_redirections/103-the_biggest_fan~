@@ -1,0 +1,2 @@
+#!/bin/bash
+cat foo.log | grep request_to_file_foo | awk '{print $1}' |  sort -n | uniq -c | sort -rn | head

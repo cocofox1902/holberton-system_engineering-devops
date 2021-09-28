@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p “Fichier to push : ” FILE
+read -p “Commit message ?: ” COMMIT
+read -p “Branch : ” BRANCH
+git add $FILE
+git commit -m “$COMMIT”
+git push origin $BRANCH

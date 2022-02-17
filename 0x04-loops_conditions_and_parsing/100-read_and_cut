@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script is displaying the passwd content but onli the username the id and the home directory
+while read -r _read; do
+	echo "$_read" | cut -d ":" -f1,4,7
+done </etc/passwd

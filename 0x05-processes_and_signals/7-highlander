@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script is killing ./4-to_infinity_and_beyond
+i=0
+while [ $i -le 3 ]; do
+	trap "echo I am invincible!!!" SIGTERM
+	echo "To infinity and beyond"
+	sleep 2
+done

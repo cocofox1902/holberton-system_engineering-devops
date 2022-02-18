@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script is displaying runnin programme of bash
+# shellcheck disable=SC2009
+ps -auxf | grep bash

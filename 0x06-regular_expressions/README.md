@@ -19,9 +19,3 @@
 ## [8. Textme](./100-textme.rb)
 
 ## [9. Pass LinkedIn technical interview level0](./101-passed_linkedin_regex_challenge.jpg)
-
-## []()
-
-## []()
-
-## []()

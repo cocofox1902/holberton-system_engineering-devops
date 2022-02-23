@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# script tha listens on prot "98" on "localhost"

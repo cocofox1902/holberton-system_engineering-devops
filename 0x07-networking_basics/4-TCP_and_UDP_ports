@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Dsiplay listening ports and show the PID and the name
+netstat -lp

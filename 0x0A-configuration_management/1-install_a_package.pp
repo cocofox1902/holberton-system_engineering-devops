@@ -1,4 +1,5 @@
 # Using Puppet, install puppet-lint
-package { 'puppet-lint':
-  ensure => '2.5.0',
+package {'puppet-lint':
+  ensure   => 'present',
+  provider => 'gem',
 }

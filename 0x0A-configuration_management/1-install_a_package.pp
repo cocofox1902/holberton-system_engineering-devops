@@ -1,5 +1,4 @@
 # Using Puppet, install puppet-lint
-package {'puppet-lint':
-  ensure   => 'present',
-  provider => 'gem',
+exec {'puppet-lint':
+  path => '/usr/bin',
 }

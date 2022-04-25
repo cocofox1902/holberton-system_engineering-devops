@@ -1,16 +1,16 @@
 # 2
 
-exec {'update':
+exec { 'update':
   command => '/usr/bin/apt-get update',
 }
 
 package { 'nginx':
   ensure  => present,
   name    => 'nginx',
-  require => Exec['apt-get-update'],
+  require => Exec['update'],
 }
 
-file_line { 'header':
+file_line { 'Add header':
   ensure  => 'present',
   path    => '/etc/nginx/sites-available/default',
   after   => 'listen 80 default_server;',
@@ -19,6 +19,6 @@ file_line { 'header':
 }
 
 service { 'nginx':
-  ensure     => running,
-  require    => Package['nginx'],
+  ensure  => running,
+  require => Package['nginx'],
 }

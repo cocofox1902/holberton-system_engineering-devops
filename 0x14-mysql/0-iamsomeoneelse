@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# 0
-if [ $# -gt 0 ]
-then
-    runuser -l  $1 -c 'whoami'
-fi

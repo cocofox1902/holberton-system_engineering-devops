@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ 3 - dictionary of list of dictionaries """
-import requests
 import json
+import requests
 
 if __name__ == "__main__":
     user_url = (requests.get(

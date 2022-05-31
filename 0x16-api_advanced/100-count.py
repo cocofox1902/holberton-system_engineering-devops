@@ -10,6 +10,9 @@ def count_words(subreddit, word_list, nb_word={}, after=None):
                            params={"after": after},
                            allow_redirects=False)
 
+    if request.status_code == 404:
+        return None
+
     if request.status_code == 200:
         info = request.json()
 

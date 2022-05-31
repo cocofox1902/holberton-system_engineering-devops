@@ -10,6 +10,9 @@ def recurse(subreddit, hot_list=[], count=0, after=None):
                            allow_redirects=False,
                            params={"count": count, 'after': after})
 
+    if request.status_code == 404:
+        return None
+
     if request.status_code == 200:
         hot_lits = hot_list + [child.get("data").get("title")
                                for child in request.json()

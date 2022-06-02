@@ -1,4 +1,6 @@
 ## Postmortem on my servers
+<img src="https://redmondmag.com/articles/2016/02/02/~/media/ECG/redmondmag/Images/introimages2014/0415red_F1Ransomware.ashx">
+
 I was working to make an parti of my project assibile online but the fate willed it in an other way. That storie take 2 days to be fix. That fix was not hard but just really weird.
 I have a friend that also have that probleme but a lot of people didn't have that probleme so that was confusing.
 The root cause was the execution of an programme to install all the things.

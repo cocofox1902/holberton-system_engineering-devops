@@ -1,5 +1,6 @@
 # testing how well our web server setup featuring Nginx
-exec { 'fix--for-nginx':
-  command => "sed -i 's/worker_processes 4;/worker_processes 7;/g' /etc/nginx/nginx.conf; sudo service nginx restart",
-  path    => ['/bin', '/usr/bin', '/usr/sbin']
+exec { 'file limit':
+  onlyif  => 'test -e /etc/default/nginx',
+  command => 'sed -i "5s/[0-9]\+/$( ulimit -n )/" /etc/default/nginx; service nginx restart',
+  provider => shell,
 }
